@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+    <center>
+        <header>
+            <a class="header-name"><span>J</span>OHN <span>D</span>OE</a>
+            <a class="header-a" href="honestly.html">HONESTLY</a>
+            <a class="header-a" href="contact.html">CONTACT ME</a>
+            <a class="header-a" href="main.html">HOME</a>
+        </header>
+        <main>
+            <div>
+                <form action="https://formspree.io/f/mgeqeddg" method="post" id="MyForm"
+                    onsubmit="return ValidateEmail()">
+                    <label class="input-text">Name: </label>
+                    <input name="name" type="text" style="margin-left:5vw;" required />
+                    </br>
+                    <label class="input-text">E-mail: </label>
+                    <input id="mail" name="email" style="margin-left:4.8vw;" required />
+
+                    </br>
+                    <label class="input-text">Address: </label>
+                    <input name="address" type="text" required style="margin-left:3.5vw;" required />
+                    </br>
+                    <label class="input-text">City: </label>
+                    <input name="city" type="text" required style="margin-left:6vw;" />
+                    </br>
+                    <label class="input-text">Postel Code: </label>
+                    <input name="postel_code" type="text" required style="margin-left:1.6vw;"
+                        pattern="[ABCEGHJ-NPRSTVXY]{1}[0-9]{1}[ABCEGHJ-NPRSTV-Z]{1}[ ]?[0-9]{1}[ABCEGHJ-NPRSTV-Z]{1}[0-9]{1}" />
+                    </br>
+
+                    <input class="radio" type="radio" id="comment" name="radio_input" value="Comment">
+                    <label style="font-size:1.5vw ;" for="comment" style="margin-right:2.5vw;">Comment</label>
+                    <input class="radio" type="radio" id="hire" name="radio_input" value="Hiring">
+                    <label style="font-size:1.5vw ;" for="hire" style="margin-right:2.5vw;">Hiring</label>
+                    <input class="radio" type="radio" id="question" name="radio_input" value="Question">
+                    <label style="font-size:1.5vw ;" for="question" style="margin-right:2.5vw;">Question</label>
+                    <br>
+                    <div class="hide-or-display" style="display:none;" id="hiring">
+                        <input type="number" name="hiring-rate" min="0" placeholder="Hourly rate" />
+                        <br>
+                    </div>
+                    <div class="hide-or-display" style="display:none;" id="com">
+                        <label class="comment-label">Comment:</label>
+                        <br>
+                        <textarea class="comment" rows="5" cols="50" name="comment"
+                            placeholder="Type a Message..."></textarea>
+                        <br>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+        </main>
+
+    </center>
+
+    <script>
+        buttons = document.querySelectorAll("input[type='radio']");
+        buttons.forEach(button => {
+            button.onclick = () => {
+                if (button.value == 'Hiring') {
+                    document.querySelector("#hiring").style = "display:block;"
+                    document.querySelector("#com").style = "display:none;"
+                }
+                else {
+                    document.querySelector("#hiring").style = "display:none;"
+                    document.querySelector("#com").style = "display:block;"
+
+                }
+            }
+        });
+        function ValidateEmail() {
+            main = document.querySelector("#mail").value;
+            if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(main)) {
+                return (true)
+            }
+            alert("You have entered an invalid email address!")
+            return (false)
+        }
+
+    </script>
+</body>
+
+</html>

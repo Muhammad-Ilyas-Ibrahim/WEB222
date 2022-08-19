@@ -1,0 +1,146 @@
+body{
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    font-family: sans-serif;
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    background-position:top;
+    background-repeat: no-repeat;
+}
+
+header{
+    width: 95%;
+    height: 15%;
+    background: #00000080;
+    font-size: 1.5vw;
+    color: white;
+    text-align: left;
+    padding: 1.2vw;
+}
+.header-name{
+    margin-left: 2%;
+    font-weight: 200;
+    margin-top: 1%;
+}
+.header-a{
+    text-decoration: none;
+    color: white;
+    padding-left: 20px;
+    float: right;
+}
+.header-a:hover{
+    color: #DA163C;
+}
+span{
+    color: #DA163C;
+}
+
+.my-name{
+    text-align: left;
+    margin-left: 15%;
+    font-size: 6vw;
+    color:#191919;
+}
+button{
+    font-size: 1.5vw;
+    font-weight: 600;
+    margin-right:50% ;
+    background: transparent;
+    border:1px solid #DA163C;
+    width: 20vw;
+    height: 3.4vw;
+    margin-bottom: 5%;
+    border-radius: 30px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #19191980;
+    color: white;
+    font-weight: 300;
+}
+
+hr{
+    width: 90%;
+}
+
+table{
+    width: 100%;
+    text-align: left;
+    background-color: #00000080;
+}
+tbody{
+    color: white;
+}
+.about{
+    color:#DA163C;
+    font-size:2vw;
+    font-weight:bold;
+    margin-left: 5%;
+}
+.basic{
+    color:#DA163C;
+    float: right;
+    font-size:2vw;
+    font-weight:bold;
+    margin-right: 5%;
+}
+
+.about-me{
+    font-size: 1.3vw;
+    width: 50%;
+}
+.basic-info{
+    font-size: 1.2vw;
+    text-align: left;
+}
+
+.basic-info-bold{
+    font-weight: bolder;
+    font-size:1.3vw;
+    margin-right: 65%;
+    margin-left: 30%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.actual-info{
+    font-size:1.3vw;
+    margin-right: 55%;
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+.edu{
+    font-size: 3vw;
+    color: white;
+}
+
+#short{
+    width: 30%;
+    background-color: rgba(0, 0, 255, 0.411);
+}
+#long{
+    width: 70%;
+    background-color: #00000080;
+}
+.prev-data{
+    font-size: 1.1vw;
+    margin-left: 5%;
+    display: inline-block;
+}
+.next-data{
+    margin-left: 4%;
+    display: inline-block;
+}
+.bachlor{
+    font-size: 1.8vw;
+}
+.experience{
+    background-color: #00000080;
+    color: antiquewhite;
+    padding: 2%;
+    margin-top: 5%;
+}
+.learned{
+    font-size: 1.6vw;
+}

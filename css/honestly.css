@@ -1,0 +1,55 @@
+body{
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    font-family: sans-serif;
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    background-position:top;
+    background-repeat: no-repeat;
+}
+
+header{
+    width: 95%;
+    height: 10%;
+    background: #00000080;
+    font-size: 1.5vw;
+    color: white;
+    text-align: left;
+    padding: 1.2vw;
+}
+.header-name{
+    margin-left: 2%;
+    font-weight: 200;
+    margin-top: 1%;
+}
+.header-a{
+    text-decoration: none;
+    color: white;
+    padding-left: 20px;
+    float: right;
+}
+.header-a:hover{
+    color: #DA163C;
+}
+span{
+    color: #DA163C;
+}
+
+div{
+    width: 90%;
+    color: azure;
+}
+p{
+    font-size: 2vw;
+}
+.bold-it{
+    font-size: 1.75vw;
+    font-weight: bold;
+}
+span{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.75vw;
+    color: red;
+}
